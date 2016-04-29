@@ -1,0 +1,29 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <!--xmlns:tools="http://schemas.android.com/tools"-->
+    <!--tools:context="com.rent_app.rentb.HomeActivity">-->
+
+        <!--xmlns:tools="http://schemas.android.com/tools"-->
+        <!--tools:context="com.rent_app.rentb.HomeActivity">-->
+        <item
+            android:id="@+id/menu_profile"
+            android:orderInCategory="100"
+            android:title="My Profile"
+            app:showAsAction="always"
+            />
+        <item
+            android:id="@+id/menu_listings"
+            android:orderInCategory="100"
+            android:title="View my listings"
+            app:showAsAction="never"
+            />
+
+        <item
+            android:id="@+id/menu_logout"
+            android:orderInCategory="100"
+            android:title="Log out"
+            app:showAsAction="never"
+            />
+
+
+</menu>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.rent_app.rentb.HomeActivity"
+    tools:showIn="@layout/activity_home"
+    android:background="@drawable/img7">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rent a bike"
+        android:id="@+id/rentbutton"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="138dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:background="#cc4d0a0a"
+        android:textColor="#fefbfb"
+        android:textAllCaps="false"
+        android:textSize="16dp"
+
+
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="List your bike for free"
+        android:id="@+id/listbutton"
+        android:layout_alignTop="@+id/rentbutton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="73dp"
+        android:layout_alignRight="@+id/rentbutton"
+        android:layout_alignEnd="@+id/rentbutton"
+        android:background="#cc4d0a0a"
+        android:textColor="#fefcfc"
+        android:textAllCaps="false"
+        android:textSize="16dp"
+        />
+</RelativeLayout>

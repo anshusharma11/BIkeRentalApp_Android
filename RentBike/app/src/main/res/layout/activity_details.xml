@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"     >
+<ImageView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:src="@drawable/ic_launcher"
+    android:layoutDirection="inherit"
+    android:clickable="true"
+    android:id="@+id/bikeImage" />
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="0,1">
+
+        <TableRow
+            android:id="@+id/deatilsTableRow1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="Brand"
+                android:id = "@+id/TextViewdetailsTableBrand"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+            <TextView
+                android:text = "Tony Hawk"
+                android:id="@+id/EditTextDetailsBrand"
+                android:layout_column="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                >
+            </TextView>
+
+</TableRow>
+        <TableRow
+
+            android:id="@+id/deatilsTableRow2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="Price per Day"
+                android:id = "@+id/TextViewdetailsTablePrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+            <TextView
+                android:text = "$250"
+                android:id="@+id/EditTextdetailPricePerday"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+               />
+        </TableRow>
+
+
+        <TableRow
+            android:id="@+id/deatilsTableRow3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="Number Of Days"
+                android:id= "@+id/TextViewNumberOfDays"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+            <TextView
+                android:text = "14"
+
+                android:id="@+id/EditTextDetailNumberOfDays"
+                android:layout_column="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                />
+        </TableRow>
+
+
+
+        <TableRow
+            android:id="@+id/deatilsTableRow4"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="Owner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+            <TextView
+                android:text="Chris"
+
+                android:id="@+id/EditTextDetailOwner"
+                android:layout_column="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                >
+            </TextView>
+
+</TableRow>
+
+        <TableRow
+            android:id="@+id/deatilsTableRow5"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="email Id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+            <TextView
+                android:text="abc@gmail.com"
+
+                android:id="@+id/EditTextDetailemail"
+                android:layout_column="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                >
+            </TextView>
+
+</TableRow>
+
+        <TableRow
+            android:id="@+id/deatilsTableRow6"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="Phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:autoLink="phone"
+                android:background="#ADD8E6"
+
+                android:textSize="20dp"
+                android:text="888-8888"
+                android:id="@+id/phone" />
+
+</TableRow>
+
+        <TableRow
+            android:id="@+id/deatilsTableRow7"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="Condition"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+            <TextView
+                android:text="new/old"
+
+                android:id="@+id/EditTextDetailsCondition"
+                android:layout_column="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                >
+            </TextView>
+
+        </TableRow>
+
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/etxt_fromdate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:hint="@string/from_date"
+            android:focusable="false"
+            />
+
+        <EditText
+            android:id="@+id/etxt_todate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:hint="@string/to_date"
+            android:focusable="false"/>
+
+    </TableRow>
+<TableRow>
+    <TextView
+        android:text="Location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+    <TextView
+        android:text = "GoogleMaps"
+        android:layout_width="271dp"
+        android:layout_height="73dp"
+        android:layout_gravity="center_horizontal" />
+
+    </TableRow>
+
+<TableRow>
+    <Button
+        android:id="@+id/homeButtonDeatils"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text = "Rent"/>
+</TableRow>
+    </TableLayout>
+
+</LinearLayout>
+    </ScrollView>
+</RelativeLayout>

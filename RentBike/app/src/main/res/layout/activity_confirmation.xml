@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:gravity="left|top">
+
+    <TextView
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Confirmation"
+        android:id="@+id/textView"
+        android:layout_weight="0.08" />
+
+    <EditText
+        android:text = "Congratulations!! your request has been updated in our system. You will also receive a confirmation email."
+        android:editable="false"
+
+        android:layout_gravity="start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextConfirmation"
+        android:layout_weight="0.59" />
+    <Button
+        android:id="@+id/homeButtonConfirmation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text = "Home"/>
+</LinearLayout>
